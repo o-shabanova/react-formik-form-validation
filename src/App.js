@@ -13,7 +13,7 @@ const App = () => {
             Basic
           </h3>
           <h3 onClick={() => setView("advanced")}
-          style={{color: view === "advanced" ? "#f0f" : ""}}>
+          style={{color: view === "advanced" ? "#fff" : ""}}>
             Advanced
           </h3>
         </nav>
