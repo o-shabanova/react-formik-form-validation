@@ -1,6 +1,7 @@
 import {Form, Formik, Field} from "formik";
 import CustomInput from "./CustomInput";
 import {advancedSchema} from "../schemas";
+import CustomSelect from "./CustomSelect";
 
 const AdvancedForm = () => {
     return (
@@ -27,6 +28,18 @@ const AdvancedForm = () => {
                     {/*    value={props.values.name}*/}
                     {/*    name="name"*/}
                     {/*/>*/}
+                    <CustomSelect
+                        label="Job Type"
+                        name="jobType"
+                        placeholder="Please select a job"
+                    >
+                        <option value="">Please select a job type</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="manager">Manager</option>
+                            <option value="other">Other</option>
+
+                    </CustomSelect>
                     <button type="submit">Submit</button>
                 </Form>
             )}
